@@ -1,0 +1,57 @@
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.toshiba.mystudy.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <DatePicker
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/dp_date"
+                >
+
+            </DatePicker>
+            <TimePicker
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tp_time">
+            </TimePicker>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_set_alarm"
+                android:text="@string/str_btn_set_alarm"
+                android:background="@color/background_material_light"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_quit_alarm"
+                android:text="@string/str_btn_quit"
+                android:background="@color/background_material_light"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

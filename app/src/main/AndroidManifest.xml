@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toshiba.mystudy" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mystudy"
+        android:label=".myStudy"
+        android:theme="@style/AppTheme."
+         >
+        <activity
+            android:name=".FirstActivity"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+
+            android:parentActivityName=".FirstActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.toshiba.mystudy.FirstActivity" />
+        </activity>
+
+
+
+
+        <activity
+            android:name=".CourseDetail"
+         >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".SecondActivity1"
+       >
+        </activity>
+        <activity
+            android:name=".DemoActivity1"
+            android:label="@string/title_activity_demo_activity1" >
+        </activity>
+        <activity
+            android:name=".CourseDetail1"
+       >
+        </activity>
+        <activity
+            android:name=".MainActivity1"
+      >
+        </activity>
+
+        <activity
+            android:name=".DemoActivity"
+            android:label="@string/title_activity_demo"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="in.wptrafficanalyzer.servicealarmdemo.demoactivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
